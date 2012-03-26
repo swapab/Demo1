@@ -1,0 +1,10 @@
+<h1>All Ads</h1>
+<ul>
+<% for ad in @ads %>
+  <li><a href="/ads/<%= ad.id %>"><%= ad.name %></a>&nbsp;&nbsp;--&nbsp;&nbsp;[<a href="/ads/<%= ad.id%>/delete">Delete</a>]</li>
+<% end %>
+</ul>
+<a href="/ads/new/">Post Your Add</a>
+<%= link_to "Open", "#" , :id => "dial", :remote => true %>
+<div id="dialog" class = 'clean-gray'>I'm in a dialog</div>
+

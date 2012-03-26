@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag :defaults %>
+  <%= javascript_include_tag "jquery-ui-1.8.17.custom.min" %>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="js/jquery-ui-1.8.17.custom.min.js"></script>
+  <script type="text/javascript" src="http://use.typekit.com/ovv1chc.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<title>Ads: <%= controller.action_name %></title>
+    <%= stylesheet_link_tag 'default.css' %>
+</head>
+<body>
+    <div id="wrapper">
+		<div id="header">
+			<div>
+
+				<h1>MeBay</h1>
+				<ul id="nav">
+					<li><a href="/ads/">All Ads</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="content">
+		  <%= yield %>
+		</div>
+		<div id="clearfooter"></div>
+    </div>
+	<div id="footer"></div>
+</body>
+</html>
+
